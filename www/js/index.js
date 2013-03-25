@@ -17,6 +17,8 @@
  * under the License.
  */
 var app = {
+    catalog: {},
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -26,24 +28,67 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        //document.addEventListener('deviceready', app.onDeviceReady, false);
+        $(document).on('pageshow', '#demo-page', app.onDeviceReady());
+        $('input:radio[name=language]').change(app.changeLanguage);
+        $('#closeMenu').click(app.closeFile);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        app.loadConfigFile();
+        console.log('App runing!');
     },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        // var parentElement = document.getElementById(id);
-        // var listeningElement = parentElement.querySelector('.listening');
-        // var receivedElement = parentElement.querySelector('.received');
+    loadConfigFile: function(){
+        $.get("pdf.xml", function(data) {
+            var obj = X2J.parseXml(data);
+            app.catalog = obj[0].catalog;
+            app.loadMagazines();
+        });
+    },
+    changeLanguage: function(){
+        if ($('input:radio[name=language]:checked').val() == 'spanish') {
+            $('div.ui-radio label[for="spanish"] span.ui-btn-text').text('Español');
+            $('div.ui-radio label[for="english"] span.ui-btn-text').text('Inglés');
 
-        // listeningElement.setAttribute('style', 'display:none;');
-        // receivedElement.setAttribute('style', 'display:block;');
+            $('#footerMessage').text('Toque una revista para abrirla');
+        } else{
+            $('div.ui-radio label[for="spanish"] span.ui-btn-text').text('Spanish');
+            $('div.ui-radio label[for="english"] span.ui-btn-text').text('English');
 
-        console.log('Received Event: ' + id);
+            $('#footerMessage').text('Touch a magazine to open');
+        };
+        $catalog.toggle( "drop", 1000, function(){
+            app.loadMagazines();
+            $catalog.toggle( "drop", 1000 );
+        });
+    },
+    loadMagazines: function(){
+        var magazines = [];
+        $catalog = $('#catalog');
+        $catalog.html('');
+        if ($('input:radio[name=language]:checked').val() == 'spanish') {
+            magazines = app.catalog[0].spanish[0].magazine;
+        } else{
+            magazines = app.catalog[0].english[0].magazine;
+        };
+        for (var i = magazines.length - 1; i >= 0; i--) {
+            $catalog.append('<li data-content = "' + magazines[i].content[0].jValue.replace('&lt;br&gt;','<br/>') + '"><a href="#" onClick="app.loadFile(\'' + magazines[i].src[0].jValue + '\')"> <img src="' + magazines[i].img[0].jValue + '"> <h2>' + magazines[i].name[0].jValue + '</h2> <p>' + magazines[i].description[0].jValue + '</p> <p class="ui-li-aside">' + magazines[i].date[0].jValue + '</p> </a></li>');
+        };
+        $catalog.listview('refresh');
+        $('#catalog li').unbind('taphold').bind('taphold', app.loadPopup);
+    },
+    loadFile: function(file){
+        var ref = window.open(file, '_blank', 'location=no');
+    },
+    closeFile: function(){
+
+    },
+    loadPopup: function(e){
+        $this = $(this);
+        $('#contentPopup p').html( $this.data('content') );
+        $('#contentPopup').popup( "open", { positionTo: e.target, transition: "flow" });
     }
 };

@@ -21,36 +21,52 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
         <!-- <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.0.min.css" /> -->
-        <link rel="stylesheet" type="text/css" href="css/prodici.min.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/prodici.min.css" /> -->
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.3.0.min.css" />
-        <!-- <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.3.0.min.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.3.0.min.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>Prodici</title>
     </head>
     <body>
-        <div data-role="page">
+        <div data-role="page" data-theme="a" id="demo-page" class="my-page" data-url="demo-page">
             <div data-role="header">
-                <h1>Page Title</h1>
-                <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal" >
-                  <a href="#" data-role="button">Español</a>
-                  <a href="#" data-role="button">Inglés</a>
-                </div>
+                <h1>Prodici</h1>
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
+                    <input type="radio" name="language" id="spanish" value="spanish" checked="checked">
+                    <label for="spanish">Español</label>
+                    <input type="radio" name="language" id="english" value="english">
+                    <label for="english">Inglés</label>
+                </fieldset>
             </div><!-- /header -->
-
             <div data-role="content">
-                <p>Page content goes here.</p>
-                
+                <ul id="catalog" data-role="listview" data-inset="true">
+                    <!--
+                    <li><a href="#">
+                        <img src="../../_assets/img/blackberry_10.png">
+                        <h2>BlackBerry 10</h2>
+                        <p>BlackBerry launched the Z10 and Q10 with the new BB10 OS</p>
+                        <p class="ui-li-aside">BlackBerry</p>
+                    </a></li> -->
+                </ul>
+                <div data-role="popup" data-arrow="true" id="contentPopup">
+                    <p>Content</p>
+                </div>
             </div><!-- /content -->
-
-            <div data-role="footer">
-                <h4>Page Footer</h4>
+            <div data-role="footer" data-theme="none">
+                <h3 id='footerMessage'>Toque una revista para abrirla</h3>
             </div><!-- /footer -->
         </div><!-- /page -->
+
+
+
+
         <script type="text/javascript" src="cordova-2.5.0.js"></script>
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script>
+        <script type="text/javascript" src="js/xml2json.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
