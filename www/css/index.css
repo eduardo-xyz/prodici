@@ -41,7 +41,7 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     width:100%;
 }
 
@@ -150,7 +150,7 @@ div[data-role="contentXXXX"]{
     font-weight: 400;
 }
 .my-page .ui-header {
-    color: #990099;
+    color: #003D6C;
 }
 .my-page .ui-footer {
     color: #666;
@@ -268,8 +268,8 @@ div[data-role="contentXXXX"]{
         bottom: auto;
         /* Custom styling. */
         color: #c0c0c0;
-        background: #990099;
-        background: rgba(153,0,153,.85);
+        background: #5A887A;
+        /*background: rgba(153,0,153,.85);*/
         -webkit-border-top-right-radius: inherit;
         border-top-right-radius: inherit;
         -webkit-border-bottom-left-radius: inherit;
@@ -324,4 +324,17 @@ object.thumbnail{
     height: 100%;
     margin-left: -5px;
     margin-top: -3px;
+}
+
+.my-page .ui-listview .ui-li-aside.ui-li-desc {
+    right: inherit !important;
+    border-bottom-right-radius: inherit !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: inherit !important;
+}
+
+#BRL{
+    position: absolute;
+    right: 0;
 }

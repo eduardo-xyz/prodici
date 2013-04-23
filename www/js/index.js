@@ -50,13 +50,13 @@ var app = {
     },
     changeLanguage: function(){
         if ($('input:radio[name=language]:checked').val() == 'spanish') {
-            $('div.ui-radio label[for="spanish"] span.ui-btn-text').text('Español');
-            $('div.ui-radio label[for="english"] span.ui-btn-text').text('Inglés');
+            // $('div.ui-radio label[for="spanish"] span.ui-btn-text').text('Español');
+            // $('div.ui-radio label[for="english"] span.ui-btn-text').text('Inglés');
 
             $('#footerMessage').text('Toque una revista para abrirla');
         } else{
-            $('div.ui-radio label[for="spanish"] span.ui-btn-text').text('Spanish');
-            $('div.ui-radio label[for="english"] span.ui-btn-text').text('English');
+            // $('div.ui-radio label[for="spanish"] span.ui-btn-text').text('Spanish');
+            // $('div.ui-radio label[for="english"] span.ui-btn-text').text('English');
 
             $('#footerMessage').text('Touch a magazine to open');
         };
@@ -74,8 +74,10 @@ var app = {
         } else{
             magazines = app.catalog[0].english[0].magazine;
         };
-        for (var i = magazines.length - 1; i >= 0; i--) {
-            $catalog.append('<li data-content = "' + magazines[i].content[0].jValue.replace('&lt;br&gt;','<br/>') + '"><a href="#" onClick="app.loadFile(\'' + magazines[i].src[0].jValue + '\')"> <img src="' + magazines[i].img[0].jValue + '"> <h2>' + magazines[i].name[0].jValue + '</h2> <p>' + magazines[i].description[0].jValue + '</p> <p class="ui-li-aside">' + magazines[i].date[0].jValue + '</p> </a></li>');
+        if (magazines != undefined) {
+            for (var i = magazines.length - 1; i >= 0; i--) {
+                $catalog.append('<li data-content = "' + magazines[i].content[0].jValue.replace('&lt;br&gt;','<br/>') + '"><a href="#" onClick="app.loadFile(\'' + magazines[i].src[0].jValue + '\')"> <img src="' + magazines[i].img[0].jValue + '"> <h2>' + magazines[i].name[0].jValue + '</h2> <p>' + magazines[i].description[0].jValue + '</p> <p class="ui-li-aside">' + magazines[i].date[0].jValue + '</p> </a></li>');
+            };
         };
         $catalog.listview('refresh');
         $('#catalog li').unbind('taphold').bind('taphold', app.loadPopup);

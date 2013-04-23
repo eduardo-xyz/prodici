@@ -1,6 +1,14 @@
 <catalog>
 	<spanish>
 		<magazine>
+			<name>Vol 4</name>
+			<date>2013</date>
+			<description>No.1, Febrero 2013 </description>
+			<content>Guías de Centroamérica y República Dominicana para el manejo de la psoriasis</content>
+			<src>pdf/spanish/REVISTA_GUIAS_2013.pdf</src>
+			<img>img/spanish/REVISTA_GUIAS_2013.png</img>
+		</magazine>
+        <!-- <magazine>
 			<name>Otros destinos</name>
 			<date>3/2013</date>
 			<description>Turquía</description>
@@ -36,10 +44,10 @@
 				&lt;br&gt;Trucos para navegar incógnito en la Web p.58</content>
 			<src>pdf/spanish/PC_World.pdf</src>
 			<img>img/spanish/PC_World.png</img>
-		</magazine>	
+		</magazine>	 -->
 	</spanish>
 	<english>
-		<magazine>
+		<!-- <magazine>
 			<name>The New Yorker</name>
 			<date>3/2013</date>
 			<description>The New Yorker is an American magazine of reportage, commentary, criticism, essays, fiction, satire, cartoons, and poetry.</description>
@@ -49,6 +57,6 @@
 				&lt;br&gt;39 The talks of the town</content>
 			<src>pdf/english/The_New_Y0rker_March_25_2013.pdf</src>
 			<img>img/english/The_New_Y0rker_March_25_2013.png</img>
-		</magazine>	
+		</magazine>	 -->
 	</english>
 </catalog>
