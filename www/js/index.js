@@ -83,7 +83,7 @@ var app = {
         $('#catalog li').unbind('taphold').bind('taphold', app.loadPopup);
     },
     loadFile: function(file){
-        var ref = window.open(file, '_blank', 'location=no');
+        var ref = window.open(file, '_blank', 'location=no,EnableViewPortScale=yes');
     },
     closeFile: function(){
 

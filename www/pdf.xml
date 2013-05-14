@@ -1,6 +1,38 @@
 <catalog>
 	<spanish>
-		<magazine>
+        <magazine>
+			<name>Vol 2</name>
+			<date>6/2011</date>
+			<description>No. 2, Junio 2011</description>
+			<content>Perspectivas en investigación</content>
+			<src>pdf/spanish/2011_2_(2)_1-28.pdf</src>
+			<img>img/spanish/2011_2_(2)_1-28_300x300.png</img>
+		</magazine>
+        <magazine>
+			<name>Vol 2</name>
+			<date>10/2011</date>
+			<description>No. 1, Octubre 2011</description>
+			<content>Perspectivas en investigación</content>
+			<src>pdf/spanish/2011_2_(1)_1-28.pdf</src>
+			<img>img/spanish/2011_2_(1)_1-28_300x300.png</img>
+		</magazine>
+        <magazine>
+			<name>Vol 2</name>
+			<date>10/2011</date>
+			<description>No. 4, Octubre 2011</description>
+			<content>Perspectivas en investigación</content>
+			<src>pdf/spanish/2011_2_(4)_1-32.pdf</src>
+			<img>img/spanish/2011_2_(4)_1-32_300x300.png</img>
+		</magazine>
+        <magazine>
+			<name>Vol 3</name>
+			<date>8/2012</date>
+			<description>No. 1, Agosto 2012</description>
+			<content>Perspectivas en investigación</content>
+			<src>pdf/spanish/2012_3_(1)_1-32.pdf</src>
+			<img>img/spanish/2012_3_(1)_1-32_300x300.png</img>
+		</magazine>
+        <magazine>
 			<name>Vol 4</name>
 			<date>2013</date>
 			<description>No.1, Febrero 2013 </description>
@@ -8,55 +40,31 @@
 			<src>pdf/spanish/REVISTA_GUIAS_2013.pdf</src>
 			<img>img/spanish/REVISTA_GUIAS_2013.png</img>
 		</magazine>
-        <!-- <magazine>
-			<name>Otros destinos</name>
-			<date>3/2013</date>
-			<description>Turquía</description>
-			<content>18 Ankara
-				&lt;br&gt;26 Tuz Gölü
-				&lt;br&gt;30 Capadocia
-				&lt;br&gt;48 Avanos
-				&lt;br&gt;54 Konya
-				&lt;br&gt;58 Hierápolis
-				&lt;br&gt;60 Pamukkale</content>
-			<src>pdf/spanish/otros_destinos.pdf</src>
-			<img>img/spanish/otros_destinos.png</img>
-		</magazine>
-		<magazine>
-			<name>Hobby</name>
-			<date>5/2013</date>
-			<description>Todos los videojuegos para todos los formatos.</description>
-			<content>6 ElSensor
-				&lt;br&gt;14 Noticias
-				&lt;br&gt;24 Big in Japan
-				&lt;br&gt;28 Reportaje:Assassin ́s Creed IV
-				&lt;br&gt;36 Reportaje PlayStation 4
-				&lt;br&gt;47 Novedades</content>
-			<src>pdf/spanish/Hobby_Consolas_-_Mayo_2013.pdf</src>
-			<img>img/spanish/Hobby_Consolas_-_Mayo_2013.png</img>
-		</magazine>
-		<magazine>
-			<name>PC World</name>
-			<date>3/2013</date>
-			<description>Consejos trucos y funciones ocultas.</description>
-			<content>Karpersky: “entramos en la guerra fría cibernética” p.29
-				&lt;br&gt;Tabletas: Con toda la potencia p37
-				&lt;br&gt;Trucos para navegar incógnito en la Web p.58</content>
-			<src>pdf/spanish/PC_World.pdf</src>
-			<img>img/spanish/PC_World.png</img>
-		</magazine>	 -->
-	</spanish>
+    </spanish>
 	<english>
-		<!-- <magazine>
-			<name>The New Yorker</name>
-			<date>3/2013</date>
-			<description>The New Yorker is an American magazine of reportage, commentary, criticism, essays, fiction, satire, cartoons, and poetry.</description>
-			<content>14 Goins on about town
-				&lt;br&gt;39 The talks of the town
-				&lt;br&gt;14 Goins on about town
-				&lt;br&gt;39 The talks of the town</content>
-			<src>pdf/english/The_New_Y0rker_March_25_2013.pdf</src>
-			<img>img/english/The_New_Y0rker_March_25_2013.png</img>
-		</magazine>	 -->
+		<magazine>
+			<name>Vol 2</name>
+			<date>6/2011</date>
+			<description>No. 2, June 2011</description>
+			<content>Perspectives in Research</content>
+			<src>pdf/english/2011_2_(2)_1-28_Eng.pdf</src>
+			<img>img/english/2011_2_(2)_1-28_Eng_300x300.png</img>
+		</magazine>
+        <magazine>
+			<name>Vol 2</name>
+			<date>10/2011</date>
+			<description>No. 4, October 2011</description>
+			<content>Perspectives in Research</content>
+			<src>pdf/english/2011_2_(4)_1-32_eng.pdf</src>
+			<img>img/english/2011_2_(4)_1-32_eng_300x300.png</img>
+		</magazine>
+        <magazine>
+			<name>Vol 3</name>
+			<date>8/2012</date>
+			<description>No. 1, August 2012</description>
+			<content>Perspectives in Research</content>
+			<src>pdf/english/2012_3_(1)_1-32_eng.pdf</src>
+			<img>img/english/2012_3_(1)_1-32_eng_300x300.png</img>
+		</magazine>
 	</english>
 </catalog>
