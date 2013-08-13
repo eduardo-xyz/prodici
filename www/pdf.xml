@@ -1,7 +1,7 @@
 <catalog>
 	<spanish>
         <magazine>
-			<name>Vol 2</name>
+			<name>Vol 3</name>
 			<date>6/2011</date>
 			<description>No. 2, Junio 2011</description>
 			<content>Perspectivas en investigación</content>
@@ -9,17 +9,9 @@
 			<img>img/spanish/2011_2_(2)_1-28_300x300.png</img>
 		</magazine>
         <magazine>
-			<name>Vol 2</name>
+			<name>Vol 4</name>
 			<date>10/2011</date>
-			<description>No. 1, Octubre 2011</description>
-			<content>Perspectivas en investigación</content>
-			<src>pdf/spanish/2011_2_(1)_1-28.pdf</src>
-			<img>img/spanish/2011_2_(1)_1-28_300x300.png</img>
-		</magazine>
-        <magazine>
-			<name>Vol 2</name>
-			<date>10/2011</date>
-			<description>No. 4, Octubre 2011</description>
+			<description>No. 2, Octubre 2011</description>
 			<content>Perspectivas en investigación</content>
 			<src>pdf/spanish/2011_2_(4)_1-32.pdf</src>
 			<img>img/spanish/2011_2_(4)_1-32_300x300.png</img>
@@ -40,10 +32,18 @@
 			<src>pdf/spanish/REVISTA_GUIAS_2013.pdf</src>
 			<img>img/spanish/REVISTA_GUIAS_2013.png</img>
 		</magazine>
+        <magazine>
+			<name>Vol 4</name>
+			<date>2013</date>
+			<description>No.1, Agosto 2013 </description>
+			<content>Perspectivas en investigación</content>
+			<src>pdf/spanish/REVISTA_2014_(4).pdf</src>
+			<img>img/spanish/2013_4_(1)_1-36_esp_300x300.png</img>
+		</magazine>
     </spanish>
 	<english>
 		<magazine>
-			<name>Vol 2</name>
+			<name>Vol 3</name>
 			<date>6/2011</date>
 			<description>No. 2, June 2011</description>
 			<content>Perspectives in Research</content>
@@ -51,9 +51,9 @@
 			<img>img/english/2011_2_(2)_1-28_Eng_300x300.png</img>
 		</magazine>
         <magazine>
-			<name>Vol 2</name>
+			<name>Vol 4</name>
 			<date>10/2011</date>
-			<description>No. 4, October 2011</description>
+			<description>No. 2, October 2011</description>
 			<content>Perspectives in Research</content>
 			<src>pdf/english/2011_2_(4)_1-32_eng.pdf</src>
 			<img>img/english/2011_2_(4)_1-32_eng_300x300.png</img>
@@ -65,6 +65,14 @@
 			<content>Perspectives in Research</content>
 			<src>pdf/english/2012_3_(1)_1-32_eng.pdf</src>
 			<img>img/english/2012_3_(1)_1-32_eng_300x300.png</img>
+		</magazine>
+        <magazine>
+			<name>Vol 2</name>
+			<date>10/2011</date>
+			<description>No. 1, Octubre 2011</description>
+			<content>Perspectivas en investigación</content>
+			<src>pdf/english/2011_2_(1)_1-28.pdf</src>
+			<img>img/english/2011_2_(1)_1-28_300x300.png</img>
 		</magazine>
 	</english>
 </catalog>
